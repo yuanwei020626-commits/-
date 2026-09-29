@@ -1,0 +1,271 @@
+\def\versionname{参考答案与解析}
+% !TEX program = xelatex
+\documentclass[UTF8,11pt,a4paper,fontset=windows]{ctexart}
+\usepackage{amsmath,amssymb,geometry,booktabs,array,fancyhdr,hyperref}
+\geometry{left=20mm,right=20mm,top=19mm,bottom=19mm,headheight=14pt,footskip=10mm}
+\hypersetup{unicode=true,hidelinks,pdfauthor={},pdftitle={直线和圆的方程 拔高讲义}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\linespread{1.20}
+\setlength{\emergencystretch}{2em}
+\everymath{\displaystyle}
+\raggedbottom
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small 直线和圆的方程\quad\versionname\quad\thepage}
+\ctexset{section={format=\Large\bfseries,number={},beforeskip=0pt,afterskip=10pt},subsection={format=\normalsize\bfseries,number={},beforeskip=9pt,afterskip=4pt}}
+\newcommand{\qhead}[2]{\subsection{#1\texorpdfstring{\quad}{ }#2}}
+\newcommand{\qsource}[1]{{\footnotesize 来源：#1。\par}}
+\begin{document}
+
+
+
+\section{2.1 直线的倾斜角与斜率}
+
+
+\qhead{01}{线段遮挡与倾斜角区间}
+\qsource{2025—2026学年度上学期七校协作体高二联考 数学}
+\textbf{答案}\quad \(k\in \left(- 1,\allowbreak 4\right)\)；\(\alpha \in \left[0,\allowbreak \arctan 4\right)\cup \left(\frac{3\pi }{4},\allowbreak \pi \right)\)。竖直直线不符合条件。\par
+设\(\ell \)：\(y- 4= k\left(x+ 1\right)\)，记\(f\left(x,\allowbreak y\right)= y- 4- k\left(x+ 1\right)\)。在\(A\)、\(B\)处，\(f\)的值分别为\(- 2- 2k\)、\(k- 4\)。\par
+线段不接触也不穿过\(\ell \)，等价于两端点严格同侧，即\(\left(- 2- 2k\right)\left(k- 4\right)> 0\)，解得\(- 1< k< 4\)。端点对应的两条直线均被排除。\par
+\(k\ge 0\)时，\(0\le \alpha < \arctan 4\)；\(k< 0\)时，\(\frac{3\pi }{4}< \alpha < \pi \)。另验\(x= - 1\)：它穿过\(AB\)内部，因此不能补入\(\alpha = \frac{\pi }{2}\)。\par
+{\small\textbf{易错点}\quad 不能把“两端斜率之间”机械地当作相交区间；过\(C\)的竖直线也必须单独检查。\par}
+
+\qhead{02}{矩形中的动点斜率}
+\qsource{2025—2026学年度上学期期中考试 高二数学}
+\textbf{答案}\quad \(\left(- \infty ,\allowbreak - \frac{1}{3}\right]\cup \left[\frac{2}{3},\allowbreak + \infty \right)\)。\par
+设\(E= \left(1,\allowbreak t\right),\allowbreak t> 0\)。矩形的对角线等长且互相平分，所以\(EA= ED\)：\(25+ \left(t- 4\right)^{2}= 16+ \left(t- 7\right)^{2}\)，得到\(t= 4\)。\par
+由中心对称，\(B= 2E- D= \left(- 3,\allowbreak 1\right),\allowbreak C= 2E- A= \left(6,\allowbreak 4\right)\)。因此\(BC\)：\(y= \frac{x}{3}+ 2\)，且\(- 3\le x\le 6\)。\par
+\(\frac{y}{x}= \frac{1}{3}+ \frac{2}{x}\)。\(x\in \left[- 3,\allowbreak 0\right)\)时，范围为\(\left(- \infty ,\allowbreak - \frac{1}{3}\right]\)；\(x\in \left(0,\allowbreak 6\right]\)时，范围为\(\left[\frac{2}{3},\allowbreak + \infty \right)\)。两部分取并集。\par
+{\small\textbf{易错点}\quad 比值在\(x= 0\)处无意义；原题的比值表达式已隐含这一限制，这里显式写出。\par}
+
+\clearpage
+
+\section{2.1 直线的倾斜角与斜率 续}
+
+\qhead{03}{垂直条件与参数分类}
+\qsource{牡丹江二中2025—2026学年度第一学期高二期中数学}
+\textbf{答案}\quad \(D\)；锐角：\(m< - 2\)；直角：\(m= - 2\)；钝角：\(m> - 2\)。\par
+在垂直条件下，\(\ell _{1}\)的斜率为\(\frac{\sqrt{3}}{3}\)。用\(- \frac{\sqrt{3}}{m+ 2}= \frac{\sqrt{3}}{3}\)，得到\(m= - 5\)。\par
+追问中，\(m= - 2\)时\(P\)、\(Q\)横坐标相同而纵坐标不同，是竖直线。\(m\ne - 2\)时按\(k= - \frac{\sqrt{3}}{m+ 2}\)的正负分类即可。倾斜角总体范围为\(\left(0,\allowbreak \pi \right)\)，不含水平位置。\par
+{\small\textbf{易错点}\quad \(m= - 2\)表示斜率不存在，不能当作无效直线删掉。\par}
+
+\clearpage
+
+\section{2.2 直线的方程}
+
+
+\qhead{04}{平行条件中的重合陷阱}
+\qsource{红桥高级中学2025—2026学年第一学期10月月考 高二数学}
+\textbf{答案}\quad \(D\)，即\(a= 1\)。\par
+方向平行的必要条件是\(\left(2a+ 1\right)a- a\left(a+ 2\right)= a\left(a- 1\right)= 0\)，因此候选为\(a= 0\)或\(1\)。\par
+\(a= 0\)时，两式为\(x+ 1= 0\)与\(2x+ 2= 0\)，表示同一条直线，应排除。\(a= 1\)时，分别为\(3x+ y+ 1= 0\)与\(3x+ y+ 2= 0\)，确为两条平行直线。\par
+{\small\textbf{易错点}\quad 系数行列式为零只保证方向平行，不能替代“不重合”的核验。\par}
+
+\qhead{05}{截距相等的完整讨论}
+\qsource{牡丹江二中2025—2026学年度第一学期高二期中数学}
+\textbf{答案}\quad （\(1\)）\(3x- 2y+ 1= 0\)；（\(2\)）\(x+ y- 3= 0\)或\(2x- y= 0\)。\par
+（\(1\)）设\(\ell \)：\(3x- 2y+ c= 0\)。代入\(A\)得\(c= 1\)，并与已知直线不重合。\par
+（\(2\)）截距均不为零时，设\(\frac{x}{b}+ \frac{y}{b}= 1\)，代入\(A\)得\(b= 3\)，即\(x+ y= 3\)。\par
+两截距均为零时，\(\ell \)经过原点及\(A\)，故\(y= 2x\)。竖直线\(x= 1\)不与\(y\)轴相交，水平线\(y= 2\)不与\(x\)轴相交，均不满足题意。\par
+{\small\textbf{易错点}\quad “截距相等”不意味着截距一定非零，也不等于截距的绝对值相等。\par}
+
+\clearpage
+
+\section{2.2 直线的方程 续}
+
+\qhead{06}{交点与截距倍数}
+\qsource{2025—2026学年度上学期七校协作体高二联考 数学}
+\textbf{答案}\quad \(x+ 2y- 3= 0\)或\(2x+ y= 0\)。\par
+联立两条已知直线，得到交点\(\left(- 1,\allowbreak 2\right)\)。\par
+非零截距时，设横截距\(2b\)、纵截距\(b\)，得到\(x+ 2y= 2b\)。代入交点得\(2b= 3\)。\par
+若截距均为零，直线经过原点及\(\left(- 1,\allowbreak 2\right)\)，得到\(y= - 2x\)。零截距也满足“横截距=\(2\times \)纵截距”。\par
+{\small\textbf{易错点}\quad 把题意写成横截距/纵截距=\(2\)，会额外排除本来允许的零截距情形。\par}
+
+\qhead{07}{被删掉的交点}
+\qsource{2025—2026学年度上学期期中考试 高二数学}
+\textbf{答案}\quad \(AD\)。\par
+集合\(A\)是直线\(y= 2x- 1\)去掉点\(\left(2,\allowbreak 3\right)\)，并不是整条直线。集合\(B\)是\(y= ax- 2\)。\par
+\(a= 2\)时两条完整直线平行，不存在交点。\(a\ne 2\)时，两条完整直线唯一交点的横坐标为\(x= \frac{1}{a- 2}\)。\par
+要让交点恰好成为\(A\)删去的点，必须\(x= 2\)，得到\(a= \frac{5}{2}\)；此时\(y= 3\)，确实被排除。\par
+{\small\textbf{易错点}\quad 去分母所得方程必须与原定义域一起保留。\par}
+
+\clearpage
+
+\section{2.2 直线的方程 续}
+
+\qhead{08}{中点条件确定截线}
+\qsource{2024—2025学年上海市宝山区高境一中高二下学期3月月考数学}
+\textbf{答案}\quad （\(1\)）\(x+ 4y- 4= 0\)；（\(2\)）\(28\)。\par
+设\(A= \left(u,\allowbreak v\right)\)。由\(P\)是\(AB\)的中点，\(B= \left(- u,\allowbreak 2- v\right)\)。\(A\in \ell _{2}\)、\(B\in \ell _{1}\)分别给出\(u- 3v+ 10= 0\)、\(2u+ v= - 6\)。\par
+解得\(A= \left(- 4,\allowbreak 2\right)\)、\(B= \left(4,\allowbreak 0\right)\)。于是\(\ell \)的斜率为\(- \frac{1}{4}\)，且经过\(P\)，得到\(x+ 4y- 4= 0\)。\par
+\(AD\)与\(\ell _{1}\)平行，故\(AD\)：\(2x+ y+ 6= 0,\allowbreak D= \left(0,\allowbreak - 6\right)\)。\(AD= 4\sqrt{5},\allowbreak B\)到\(AD\)的距离为\(\frac{14}{\sqrt{5}}\)，所以面积为\(\left(\frac{1}{2}\right)\times 4\sqrt{5}\times \frac{14}{\sqrt{5}}= 28\)。\par
+{\small\textbf{易错点}\quad 先用中点坐标建立\(A\)、\(B\)的联系，比直接设斜率更简洁，也不会漏掉竖直线。\par}
+
+\clearpage
+
+\section{2.3 直线的交点坐标与距离公式}
+
+
+\qhead{09}{平行线距离与等距直线}
+\qsource{2025年三新协同教研共同体高二联考 数学}
+\textbf{答案}\quad 距离为\(\frac{7}{2\sqrt{13}}\)；等距轨迹为\(8x- 12y+ 13= 0\)。\par
+把第二条直线整体除以\(2\)，得到\(2x- 3y+ \frac{3}{2}= 0\)。距离为\(\frac{\lvert 5- \frac{3}{2}\rvert }{\sqrt{13}}= \frac{7}{2\sqrt{13}}\)。\par
+设\(t= 2x- 3y\)。等距条件为\(\lvert t+ 5\rvert = \lvert t+ \frac{3}{2}\rvert \)。平方相减得\(t= - \frac{13}{4}\)，所以\(8x- 12y+ 13= 0\)。\par
+{\small\textbf{易错点}\quad 必须将\(x\)、\(y\)的系数同时归一，不能直接用原方程的常数项相减。\par}
+
+\qhead{10}{折线路程与取等点}
+\qsource{牡丹江二中2025—2026学年度第一学期高二期中数学}
+\textbf{答案}\quad \(B\)；\(P= \left(\frac{1}{4},\allowbreak 0\right)\)。\par
+把\(N\)关于\(x\)轴反射为\(N'\left(1,\allowbreak - 1\right)\)，于是\(\lvert PN\rvert = \lvert PN'\rvert \)。三角不等式给出\(\lvert PM\rvert + \lvert PN'\rvert \ge \lvert MN'\rvert = 5\)。\par
+\(MN'\)的方程为\(y- 3= - \frac{4\left(x+ 2\right)}{3}\)。令\(y= 0\)，得\(x= \frac{1}{4}\)。该交点在线段\(MN'\)上，确实取得等号。\par
+{\small\textbf{易错点}\quad 只给三角不等式下界不够，还应证明折线路径能取到这个下界。\par}
+
+\clearpage
+
+\section{2.3 直线的交点坐标与距离公式 续}
+
+\qhead{11}{反射法叠加圆上动点}
+\qsource{2025年三新协同教研共同体高二联考 数学}
+\textbf{答案}\quad \(A\)，即\(\sqrt{13}- 1\)。\par
+圆心\(C= \left(- 1,\allowbreak - 1\right)\)，半径\(1\)。\(P\)始终在圆外，固定\(P\)时，\(\lvert PQ\rvert \)的最小值为\(\lvert PC\rvert - 1\)。\par
+将\(C\)关于\(y= 1\)反射为\(C'= \left(- 1,\allowbreak 3\right)\)。于是所求下界为\(\lvert PA\rvert + \lvert PC'\rvert - 1\ge \lvert AC'\rvert - 1= \sqrt{13}- 1\)。\par
+线段\(AC'\)与\(y= 1\)相交于\(P= \left(\frac{1}{3},\allowbreak 1\right)\)。再取\(Q\)为射线\(CP\)与圆的近交点，两个等号可以同时成立。\par
+{\small\textbf{易错点}\quad 先对\(Q\)取最值，再对\(P\)取最值；两个取等条件必须兼容。\par}
+
+\qhead{12}{直线束缺失位置与开端点}
+\qsource{2025—2026学年度上学期期中考试 高二数学}
+\textbf{答案}\quad \(D\)。\par
+该直线束过\(F= \left(2,\allowbreak - 2\right)\)，但漏掉直线\(x- y- 4= 0\)。记原点到束中直线的距离为\(d\)。\par
+\(d^{2}= \frac{\left(4\lambda + 6\right)^{2}}{\left(\lambda + 2\right)^{2}+ \left(\lambda + 1\right)^{2}}= 8- \frac{4}{2\lambda ^{2}+ 6\lambda + 5}\)。由于分母=\(2\left(\lambda + \frac{3}{2}\right)^{2}+ \frac{1}{2}\)，可知\(d\)遍历\(\left[0,\allowbreak 2\sqrt{2}\right)\)。\par
+对固定直线，圆上点到直线的距离遍历\(\left[\max \left(0,\allowbreak d- 1\right),\allowbreak d+ 1\right]\)。对所有允许的\(d\)取并集，得到\(\left[0,\allowbreak 2\sqrt{2}+ 1\right)\)。\par
+距离\(0\)可取；上端点需要\(d= 2\sqrt{2}\)，即漏掉的那条直线，所以只能无限接近，不能取得。\par
+{\small\textbf{易错点}\quad “经过定点的直线束”未必包含全部过定点直线；最大值和上确界不能混用。\par}
+
+\clearpage
+
+\section{2.4 圆的方程}
+
+
+\qhead{13}{定比距离生成圆}
+\qsource{牡丹江二中2025—2026学年度第一学期高二期中数学}
+\textbf{答案}\quad \(ABC\)。\par
+设\(M= \left(x,\allowbreak y\right)\)，距离关系平方得\(\left(x+ 2\right)^{2}+ y^{2}= 2\left[\left(x- 2\right)^{2}+ y^{2}\right]\)，化为\(\left(x- 6\right)^{2}+ y^{2}= 32\)。两边的距离均非负，平方前后等价。\par
+圆心为\(\left(6,\allowbreak 0\right)\)，半径\(4\sqrt{2}\)，所以面积\(32\pi \)。直线\(x- y- 6= 0\)过圆心，故是对称轴。\par
+\(\left(7- 6\right)^{2}+ 8^{2}= 65> 32\)，故\(\left(7,\allowbreak 8\right)\)在圆外，\(D\)错误。\par
+{\small\textbf{易错点}\quad 轨迹的充分性不能遗漏；对称轴只需经过圆心，不必平行于坐标轴。\par}
+
+\qhead{14}{圆心定位与定长弦}
+\qsource{2025年三新协同教研共同体高二联考 数学}
+\textbf{答案}\quad （\(1\)）\(\left(x- 3\right)^{2}+ \left(y- 3\right)^{2}= 4\)；（\(2\)）\(x= 4\)或\(4x+ 3y- 16= 0\)。\par
+两已知圆上点连线的中垂线为\(y= x\)。与圆心轨迹\(x+ y= 6\)联立，得到\(C= \left(3,\allowbreak 3\right)\)，半径为\(2\)。\par
+半弦长\(\sqrt{3}\)，故弦心距\(d= \sqrt{4- 3}= 1\)。竖直线\(x= 4\)到圆心的距离为\(1\)，符合条件。\par
+斜率存在时，设\(y= k\left(x- 4\right)\)。由\(\frac{\lvert - k- 3\rvert }{\sqrt{k^{2}+ 1}}= 1\)，得到\(\left(k+ 3\right)^{2}= k^{2}+ 1\)，即\(k= - \frac{4}{3}\)，故\(4x+ 3y- 16= 0\)。\par
+{\small\textbf{易错点}\quad 设\(y= k\left(x- 4\right)\)前先检查\(x= 4\)，否则会丢失一条合法弦。\par}
+
+\clearpage
+
+\section{2.4 圆的方程 续}
+
+\qhead{15}{切点定位与圆的轴对称}
+\qsource{2025—2026学年度上学期期中考试 高二数学}
+\textbf{答案}\quad （\(1\)）\(x= 0\)或\(3x+ 4y= 0\)；（\(2\)）\(\left(x- \frac{11}{5}\right)^{2}+ \left(y- \frac{2}{5}\right)^{2}= 2\)。\par
+\(A\)在切线上，故\(A\)就是切点。半径\(CA\)垂直于\(x+ y= 1\)，因此圆心在\(y= x- 3\)上。与\(y= - 2x\)联立，得\(C= \left(1,\allowbreak - 2\right),\allowbreak r= \sqrt{2}\)。\par
+（\(1\)）半弦长为\(1\)，弦心距也为\(1\)。\(x= 0\)符合条件。若\(\ell \)：\(y= kx\)，则\(\frac{\lvert k+ 2\rvert }{\sqrt{k^{2}+ 1}}= 1\)，化简得\(4k+ 3= 0\)。\par
+（\(2\)）\(OA\)：\(x+ 2y= 0\)。设\(C\)关于该直线的垂足\(H\)。投影公式给出\(H= C- \left[\frac{1- 4}{5}\right]\left(1,\allowbreak 2\right)= \left(\frac{8}{5},\allowbreak - \frac{4}{5}\right)\)。\par
+对称圆心\(C'= 2H- C= \left(\frac{11}{5},\allowbreak \frac{2}{5}\right)\)，半径保持\(\sqrt{2}\)，从而得到所求圆。\par
+{\small\textbf{易错点}\quad 对称的是圆心，半径不变；先发现\(A\)为切点能避免繁琐的二次方程。\par}
+
+\clearpage
+
+\section{2.4 圆的方程 续}
+
+\qhead{16}{垂直直线束与轨迹完整性}
+\qsource{2025—2026学年度上学期期中考试 高二数学}
+\textbf{答案}\quad \(A\)；轨迹\(x^{2}+ y^{2}- x- 3y= 0\)去掉\(\left(1,\allowbreak 0\right)\)；\(m= - 2\)或\(\frac{1}{2}\)。\par
+恒过的点为\(A= \left(0,\allowbreak 0\right)\)、\(B= \left(1,\allowbreak 3\right)\)。两直线法向量\(\left(1,\allowbreak m\right)\)与\(\left(m,\allowbreak - 1\right)\)的数量积为\(0\)，故两线垂直。\par
+\(P\ne A\)、\(B\)时，\(\angle APB= 90\)°，所以\(P\)在以\(AB\)为直径的圆上；\(P= A\)或\(B\)也在该圆上。圆方程为\(x^{2}+ y^{2}- x- 3y= 0\)。\par
+联立得\(P= \left(\frac{m\left(m- 3\right)}{m^{2}+ 1},\allowbreak \frac{3- m}{m^{2}+ 1}\right)\)。点\(\left(1,\allowbreak 0\right)\)不可能满足第一条直线。反之，圆上\(y\ne 0\)的点取\(m= - \frac{x}{y}\)即能实现；圆上\(y= 0\)的点仅\(A\)与\(\left(1,\allowbreak 0\right)\)，其中\(A\)由\(m= 3\)实现。因此只剔除\(\left(1,\allowbreak 0\right)\)。\par
+\(\lvert PA\rvert ^{2}+ \lvert PB\rvert ^{2}= \lvert AB\rvert ^{2}= 10\)，所以\(\lvert PA\rvert \cdot \lvert PB\rvert \le 5\)。当\(\lvert PA\rvert ^{2}= \lvert PB\rvert ^{2}= 5\)时，\(P\)为\(\left(2,\allowbreak 1\right)\)或\(\left(- 1,\allowbreak 2\right)\)，均在允许轨迹上；由\(m= - \frac{x}{y}\)得到\(- 2\)或\(\frac{1}{2}\)。\par
+{\small\textbf{易错点}\quad 轨迹不能只写“以\(AB\)为直径的圆”；参数化直线束可能漏点。\par}
+
+\qhead{17}{半圆约束下的分式范围}
+\qsource{牡丹江二中2025—2026学年度第一学期高二期中数学}
+\textbf{答案}\quad \(A\)。\par
+原式表示\(\left(x- 1\right)^{2}+ \left(y- 1\right)^{2}= 1\)且\(x\ge 1\)的右半圆。分式是\(T= \left(0,\allowbreak - 2\right)\)到该半圆上点的连线斜率。\par
+设对应直线\(y= kx- 2\)。与整圆相切时，\(\frac{\lvert k- 3\rvert }{\sqrt{k^{2}+ 1}}= 1\)，得到\(k= \frac{4}{3}\)。切点为\(\left(\frac{9}{5},\allowbreak \frac{2}{5}\right)\)，属于右半圆，给出最小值。\par
+右半圆上\(1\le x\le 2\)、\(0\le y\le 2\)，因此\(\frac{y+ 2}{x}\le 4\)，且在\(\left(1,\allowbreak 2\right)\)取等。半圆是连通弧、分式连续，两个端值之间全部可取。\par
+{\small\textbf{易错点}\quad 根式方程平方后必须保留\(x\ge 1\)；不能把右半圆扩大成整圆。\par}
+
+\clearpage
+
+\section{2.5 直线与圆 圆与圆的位置关系}
+
+
+\qhead{18}{等距点个数的临界分类}
+\qsource{2025年高考数学全国一卷}
+\textbf{答案}\quad \(B\)；\(r\in \left(0,\allowbreak 1\right)\)、\(\left\{1\right\}\)、\(\left(1,\allowbreak 3\right)\)、\(\left\{3\right\}\)、\(\left(3,\allowbreak + \infty \right)\)时，点数依次为\(0\)、\(1\)、\(2\)、\(3\)、\(4\)。\par
+圆心\(C= \left(0,\allowbreak - 2\right)\)到已知直线的距离为\(2\)。与已知直线距离\(1\)的点组成两条平行线，它们到\(C\)的距离分别为\(1\)和\(3\)。\par
+半径小于\(1\)时均无交点；\(r= 1\)时近线相切；\(1< r< 3\)时近线割圆而远线在外；\(r= 3\)时近线有两个交点、远线有一个切点；\(r> 3\)时两线各有两个交点。\par
+{\small\textbf{易错点}\quad 要统计两条等距平行线的交点总数；\(r= 3\)时是\(3\)个点。\par}
+
+\qhead{19}{直线束的弦长最值与缺失方向}
+\qsource{2024—2025学年浙江省温州市高二上学期期末数学A卷}
+\textbf{答案}\quad \(BD\)；弦长范围为\(\left[2\sqrt{11},\allowbreak 8\right)\)。左端在\(m= \frac{3}{5}\)时取得，右端不能取得。\par
+将直线方程整理为\(m\left(2x+ y- 3\right)- \left(x+ y- 1\right)= 0\)，得定点\(F= \left(2,\allowbreak - 1\right)\)，因此\(A\)错误。圆心\(C= \left(1,\allowbreak 1\right)\)，半径\(4\)；\(C\)到\(y\)轴距离\(1\)，弦长\(2\sqrt{16- 1}= 2\sqrt{15},\allowbreak B\)正确。\par
+\(C\)到\(\ell \)的距离\(d= \frac{1}{\sqrt{\left(2m- 1\right)^{2}+ \left(m- 1\right)^{2}}}\)。分母平方等于\(5\left(m- \frac{3}{5}\right)^{2}+ \frac{1}{5}\)，因此\(0< d\le \sqrt{5}\)，且\(d= \sqrt{5}\)在\(m= \frac{3}{5}\)时取得。\par
+弦长\(L= 2\sqrt{16- d^{2}}\)，所以\(L\in \left[2\sqrt{11},\allowbreak 8\right)\)。最短弦对应\(m= \frac{3}{5}\)，代回得到\(x- 2y- 4= 0,\allowbreak D\)正确。\par
+弦长\(8\)要求直线过圆心，即\(CF\)：\(2x+ y- 3= 0\)。但它是该直线束缺失的方向，任何有限\(m\)都不能给出这条直线，所以\(C\)错误。\(m\)的绝对值趋于无穷时，\(L\)只能趋近\(8\)。\par
+{\small\textbf{易错点}\quad “所有过定点的直线”与“参数遍历实数的直线束”未必相同；上确界不能直接写成最大值。\par}
+
+\clearpage
+
+\section{2.5 直线与圆 圆与圆的位置关系 续}
+
+\qhead{20}{最小圆心角与最短弦}
+\qsource{2026届华附 省实 广雅 深中高三四校期末联考 数学}
+\textbf{答案}\quad 余弦为\(\frac{1}{3}\)；\(m= - 1\)；\(\lvert AB\rvert = 4\)。\par
+直线恒过\(P= \left(2,\allowbreak 3\right)\)。\(C= \left(4,\allowbreak 5\right),\allowbreak r= 2\sqrt{3},\allowbreak \lvert CP\rvert = 2\sqrt{2}< r\)，所以每条直线都割圆。\par
+设弦心距\(d\)，则\(d\le \lvert CP\rvert = 2\sqrt{2}\)，等号在\(\ell \perp CP\)时取得。此时\(\ell \)斜率为\(- 1\)，属于题设直线束。\par
+设\(\theta = \angle ACB\in \left(0,\allowbreak \pi \right]\)。\(\cos \theta = \frac{2d^{2}}{r^{2}}- 1\)，因此\(\theta \)最小时\(\cos \theta \)最大，值为\(2\times \frac{8}{12}- 1= \frac{1}{3}\)。\par
+取\(m= - 1,\allowbreak \ell \)：\(x+ y- 5= 0\)，弦长\(2\sqrt{12- 8}= 4\)。\par
+{\small\textbf{易错点}\quad 圆心角最小等价于弦心距最大；注意角的取值在\(\left[0,\allowbreak \pi \right]\)内。\par}
+
+\qhead{21}{半圆的两个交点}
+\qsource{2025—2026学年度上学期七校协作体高二联考 数学}
+\textbf{答案}\quad \(D\)。\par
+直线过\(F= \left(1,\allowbreak 3\right)\)。上半圆上的交点横坐标\(x< 1\)，因此\(k= \frac{3- y}{1- x}> 0\)。\par
+与整圆相交要求\(\left(3- k\right)^{2}< 1+ k^{2}\)，得到\(k> \frac{4}{3}\)。\(k= \frac{4}{3}\)时只有一个切点，必须排除。\par
+代入整圆得\(\left(1+ k^{2}\right)x^{2}+ 2k\left(3- k\right)x+ \left(3- k\right)^{2}- 1= 0\)。两个交点都在上半圆需两个\(y\)根非负。由韦达定理，\(y_{1}+ y_{2}= \frac{2\left(3- k\right)}{1+ k^{2}},\allowbreak y_{1}y_{2}= \frac{3\left(3- 2k\right)}{1+ k^{2}}\)。\par
+结合\(k> \frac{4}{3}\)，得\(k\le \frac{3}{2}\)。\(k= \frac{3}{2}\)时两点为\(\left(- 1,\allowbreak 0\right)\)、\(\left(- \frac{5}{13},\allowbreak \frac{12}{13}\right)\)，符合条件，因此右端点保留。\par
+{\small\textbf{易错点}\quad 整圆的判别式>\(0\)只是一部分条件；两交点还必须同时满足\(y\ge 0\)。\par}
+
+\clearpage
+
+\section{2.5 直线与圆 圆与圆的位置关系 续}
+
+\qhead{22}{两圆公切线与相交弦}
+\qsource{2025—2026学年度上学期七校协作体高二联考 数学}
+\textbf{答案}\quad \(C\)；公切线为\(x= - 2\)、\(x+ 2\sqrt{6}\left(y+ 2\right)- 10= 0\)、\(x- 2\sqrt{6}\left(y+ 2\right)- 10= 0\)。\(\rho = 4\)时公共弦：\(x= - \frac{13}{10}\)，弦长\(\frac{\sqrt{231}}{5}\)。\par
+两圆圆心距离为\(5\)，原半径分别\(2\)与\(3\)，故外切，有\(3\)条公切线。切点为\(\left(- 2,\allowbreak - 2\right)\)，对应公共内切线\(x= - 2\)。\par
+其余两条设\(y+ 2= kx+ b\)。圆心到直线距离分别为\(\frac{\lvert b\rvert }{\sqrt{1+ k^{2}}}= 2\)、\(\frac{\lvert b- 5k\rvert }{\sqrt{1+ k^{2}}}= 3\)。外公切线的两个有向距离同号。\par
+令\(b= 2s\sqrt{1+ k^{2}},\allowbreak b- 5k= 3s\sqrt{1+ k^{2}},\allowbreak s= \pm 1\)，得\(k= - \frac{s}{2\sqrt{6}},\allowbreak b= \frac{5s}{\sqrt{6}}\)。化为答案中的两条斜切线。\par
+变半径后，\(d= 5\)恒定：\(0< \rho < 3\)外离；\(\rho = 3\)外切；\(3< \rho < 7\)相交；\(\rho = 7\)内切；\(\rho > 7\)内含（\(C\)在\(D\)内）。\par
+\(\rho = 4\)时，两圆方程相减得\(10x+ 25= 12\)，故公共弦直线\(x= - \frac{13}{10}\)。对圆\(C\)用弦长公式，长为\(2\sqrt{4- \left(\frac{13}{10}\right)^{2}}= \frac{\sqrt{231}}{5}\)。\par
+{\small\textbf{易错点}\quad 两圆相减得到公共弦所在直线后，仍需先保证两圆确实相交；内切边界来自半径之差。\par}
+
+\clearpage
+
+\section{2.5 直线与圆 圆与圆的位置关系 续}
+
+\qhead{23}{切点弦中点的轨迹与距离}
+\qsource{2025年三新协同教研共同体高二联考 数学}
+\textbf{答案}\quad \(C\)；\(\lvert OP\rvert \cdot \lvert OQ\rvert = 4\)；轨迹为\(\left(x- \frac{1}{2}\right)^{2}+ \left(y+ \frac{1}{2}\right)^{2}= \frac{1}{2}\)去掉\(O\)。\par
+\(O\)到\(\ell \)的距离为\(2\sqrt{2}> 2\)，故每个\(Q\)都在圆外，始终存在两条不同切线。\(OE= OF\)、\(QE= QF\)，因而\(OQ\)垂直平分\(EF,\allowbreak P\)在\(OQ\)上。\par
+由直角三角形\(OEQ\)的投影关系，\(\lvert OP\rvert \cdot \lvert OQ\rvert = \lvert OE\rvert ^{2}= 4\)。也可设\(Q= \left(u,\allowbreak v\right)\)，切点满足\(ux+ vy= 4\)，得到\(P= \frac{4Q}{u^{2}+ v^{2}}\)。\par
+由于\(u- v= 4\)，反解\(Q= \frac{4P}{x^{2}+ y^{2}}\)并代入，得到\(x^{2}+ y^{2}= x- y\)，即\(\left(x- \frac{1}{2}\right)^{2}+ \left(y+ \frac{1}{2}\right)^{2}= \frac{1}{2}\)。\(P\ne O\)；反之，圆上任意非零点由该反解均给出\(\ell \)上的\(Q\)，故没有其他漏点。\par
+该轨迹上\(x- y\in \left(0,\allowbreak 2\right]\)。于是\(P\)到\(\ell \)的距离=\(\frac{4- x+ y}{\sqrt{2}}\)，范围为\(\left[\sqrt{2},\allowbreak 2\sqrt{2}\right)\)。\par
+下端点在\(P= \left(1,\allowbreak - 1\right)\)、\(Q= \left(2,\allowbreak - 2\right)\)时取得。上端点要求\(P= O\)，不能取得；当\(Q\)沿\(\ell \)趋向无穷远时距离趋近上端点。\par
+{\small\textbf{易错点}\quad 求出轨迹方程后要反查参数点的可达性；被排除的原点恰好决定开端点。\par}
+\end{document}
